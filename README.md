@@ -1,5 +1,9 @@
 # dev-pipeline-dsh 使用说明 (v2)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/qwertasdf123-xkw/dev-pipeline-dsh)](https://github.com/qwertasdf123-xkw/dev-pipeline-dsh)
+[![GitHub repo](https://img.shields.io/badge/GitHub-qwertasdf123--xkw%2Fdev--pipeline--dsh-blue)](https://github.com/qwertasdf123-xkw/dev-pipeline-dsh)
+
 ## 30 秒上手
 1. agent 在项目根目录创建 .dev/STATUS.md（首次自动引导）
 2. 用触发短语启动流程

@@ -1,6 +1,6 @@
 # subagent 提示词模板 (DSH 版)
 
-> DSH 的 subagent 后台运行，用 job_output 收集结果；并行调研派多个。
+> 委托子 agent 后台运行，事后取回结果；并行调研派多个。工具名由 runtime-adapter.md 的 C4/C5 槽决定，本文件不绑定具体工具。
 
 ## §VERIFIER（验证者）
 ```
@@ -30,8 +30,9 @@
 ```
 
 ## 使用规则
-1. 后台启动: subagent(run_in_background: true)，返回 job id
-2. 收集: job_output(job_id) 取结果；不轮询，等完成通知
-3. 并行: 多个 subagent 同批启动，互不阻塞
+1. 后台启动: 用宿主的子 agent 能力起后台任务（C5 槽），记下任务 id
+2. 收集: 用宿主的结果查询能力取回（C4 槽）；不轮询，等完成通知
+3. 并行: 多个子 agent 同批启动，互不阻塞
 4. 结果落地: 摘要写入 .dev/ 产物，原始输出按需保留
-5. 上下文控制: subagent 输出只留摘要进主上下文
+5. 上下文控制: 子 agent 输出只留摘要进主上下文
+6. 无子 agent 能力时: 自己做，但 gate-report 必须标注"**未独立复核**"，不得冒充独立验证

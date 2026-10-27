@@ -23,13 +23,23 @@ status: pending
 - [ ] modify —— 需要修改（请指明改什么）
 - [ ] abort —— 中止本工作流
 
-## DSH 门禁提交方式（v2）
+## 门禁提交方式（宿主无关）
 1. 本文件写入 .dev/gate-report-NN.md
-2. 用 ask_user_question 提问（header: Gate Report — Stage NN），选项:
+2. 用宿主的多选能力提问（标题: Gate Report — Stage NN），选项:
    - approve（推荐）—— 进入下一阶段
    - modify —— 需要修改（用户注明改什么）
    - abort —— 中止本工作流
 3. 等待用户选择；agent 不自行 approve
+
+### 宿主无多选能力时（降级）
+按 runtime-adapter.md §5 输出文本三选项（approve / modify / abort），然后**显式停下等下一条用户回复**。
+禁止：把沉默当 approve、复用上一阶段的 approve、在同一轮里既提问又推进。
+
+### 状态回写（收到明确选择后）
+1. 把选择写进本文件 frontmatter 的 `status` 字段（approved / modified / aborted）
+2. decision-log.md 追加一条（原因 + 替代方案 + Supersedes）
+3. STATUS.md 更新状态与下一步
+4. **之后才**推进下一阶段
 
 ## Abort 选项联动
 当 gate-report 选 abort 时，必须同步：

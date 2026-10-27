@@ -7,7 +7,7 @@
 
 ## agent 做
 1. 用 templates/research.md 对比表
-2. 用 web_search 检索 + 必要时 subagent 并行调研
+2. 用宿主检索能力（C9 槽）查资料 + 必要时委托子 agent（C5 槽）并行调研
 3. 推荐 + 理由
 
 ## 人类做

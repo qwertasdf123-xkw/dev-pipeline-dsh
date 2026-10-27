@@ -5,7 +5,7 @@
 
 ## 阶段契约(进入任一阶段前必读)
 - 必须先读 stages/0X-*.md 全部内容
-- 必须用 templates/0X-*.md 全部模板
+- 必须使用 templates/ 目录中的全部现存模板；阶段模板按阶段使用，STATUS / decision-log / gate-report 全程维护
 - 不可跳读、不可总结、不可我觉得差不多
 
 ## 时间盒
@@ -43,7 +43,7 @@
 
 ## 自动化(必须)
 - CI/CD 全自动,策略即代码,自动化 SAST/SCA,签名制品,自动金丝雀 + 自动回滚
-- 强烈推荐: 变异测试 / contract testing / chaos engineering
+- 必须: 变异测试 + contract testing; 强烈推荐: chaos engineering
 
 ## 文档
 - docs-as-code + DRI per doc + SLA,自动 staleness detection
@@ -51,7 +51,7 @@
 
 ## 安全/Docs/PDCA/Compliance
 - Security: 联邦化(产品/公司/云/供应链),独立 AppSec 团队
-- Docs: 联邦化,DRI + SLA + 弃用策略
+- Docs: 联邦化,DRI + SLA
 - PDCA: PMO / Engineering Excellence 团队
 - Compliance: 审计跟踪 / 数据分类 / 保留策略 / 访问审查
 

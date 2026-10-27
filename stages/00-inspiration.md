@@ -22,7 +22,7 @@
 - L1: 10 min 封顶
 
 ## 退出条件
-`用户确认 → Stage 1 Spec`
+`Gate Report approve → Stage 1 Spec`
 
 ## 安全边界
 - 不执行任何实现动作

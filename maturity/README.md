@@ -24,9 +24,12 @@ agent 在 Step 0 检测：我一个人做 → L1；我们 5 人团队 → L2(需
 4. 告知用户切换完成
 
 ## 规则文件
-- L1-rules.md (~100 tokens) - 单人/单兵
-- L2-rules.md (~150 tokens) - 小组 2-10 人
-- L3-rules.md (~300 tokens) - 企业 10+ 人,等效 C 严格版
+- L1-rules.md (~376 tokens) - 单人/单兵
+- L2-rules.md (~504 tokens) - 小组 2-10 人
+- L3-rules.md (~874 tokens) - 企业 10+ 人,等效 C 严格版
+
+> 口径: 中文 1 字 ≈ 1 token, ASCII 4 字符 ≈ 1 token, 保守估计(较 cl100k 偏高 5~15%)。
+> v2 标注的 100/150/300 系字符粗估, 低估约 3 倍; v3 起改为实测值。
 
 ## L3 = C 效果?
 是。L3 强制：必读所有 stage 契约、必用所有 template、必填所有 gate-report、必走 peer review、必跑变异测试、必开审计委员会。

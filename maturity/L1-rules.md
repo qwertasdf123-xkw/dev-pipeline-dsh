@@ -29,11 +29,11 @@
 - Observe: 每周复盘
 
 ## 评审
-- 所有 Gate Report 自己批准
+- 所有 Gate Report 必须等用户明确 approve；agent 不自行批准
 - 无 peer review,无架构评审委员会
 
 ## 自动化
-- 保存/提交时跑测试(pwsh 或 git hook)
+- 保存/提交时跑测试(宿主 shell 或 git hook)
 - 不要求 CI/CD 完整流水线,不要求 coverage gate,不要求 SAST/SCA
 
 ## 文档

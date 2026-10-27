@@ -49,7 +49,7 @@
 完整映射表见 `runtime-adapter.md` §2。
 
 ## 与 vibe 的协作（可选）
-- vibe = 治理运行时（冻结需求/计划/执行闭环）；本 skill = 项目流程纪律（阶段/门禁/制品）
+- vibe = 治理运行时（冻结需求/计划/执行闭环）；本技能 = 项目流程纪律（阶段/门禁/制品）
 - 复杂任务模式: vibe 冻结需求与计划 → dev-pipeline-dsh 执行阶段门禁 → vibe 验证 —— 制品不双轨
 - vibe 通过 skill roots 可发现本技能（name: `dev-pipeline-dsh`），发现方式随宿主而定
 - **vibe 不可用时**（多数宿主如此）→ 自动走**独立闭环模式**：需求/计划由 Stage 1 / Stage 4 自行产出并落盘，STATUS 标注 `mode: standalone`，流程照常走完，**不阻塞**

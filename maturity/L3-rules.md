@@ -51,7 +51,7 @@
 
 ## 安全/Docs/PDCA/Compliance
 - Security: 联邦化(产品/公司/云/供应链),独立 AppSec 团队
-- Docs: 联邦化,DRI + SLA
+- Docs: 联邦化,DRI + SLA + 弃用策略
 - PDCA: PMO / Engineering Excellence 团队
 - Compliance: 审计跟踪 / 数据分类 / 保留策略 / 访问审查
 
